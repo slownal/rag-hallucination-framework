@@ -1,0 +1,27 @@
+# Core ML dependencies
+torch>=2.0.0
+transformers>=4.35.0
+sentence-transformers>=2.2.2
+numpy>=1.24.0
+
+# HuggingFace datasets library — used by data_loader.py to download
+# MedHallu (UTAustin-AIHealth/MedHallu) and PubMedQA (qiaojin/PubMedQA)
+datasets>=2.14.0
+
+# Sentence splitting (optional but recommended -- falls back to regex
+# splitter in sentence_splitter.py if not installed)
+nltk>=3.8
+
+# Parquet support (needed by the `datasets` library to read HF datasets)
+pyarrow>=12.0.0
+pandas>=2.0.0
+
+# Progress bars (used by HuggingFace datasets)
+tqdm>=4.65.0
+
+# Only needed if you use generator.py's OpenAIGenerator backend
+# openai>=1.0.0
+
+# Only needed if/when you add FAISS-based indexing to retriever.py for
+# large corpora (not required for the current in-memory implementation)
+# faiss-cpu>=1.7.4
