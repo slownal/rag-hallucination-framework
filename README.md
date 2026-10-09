@@ -14,10 +14,10 @@ A fully functional pipeline that detects hallucinations in LLM-generated medical
 
 | Tier | Action | Condition |
 |---|---|---|
-| ✅ **DISPLAY** | Show the sentence as-is | Entailment prob ≥ 0.70 |
-| ❌ **SUPPRESS** | Drop the sentence entirely | Contradiction prob ≥ 0.50 |
-| 🔄 **RE_RETRIEVE** | Widen search & retry (up to 2×) | Entailment prob < 0.30 |
-| ⚠️ **FLAG** | Show with unverified warning | Borderline / inconclusive |
+|  **DISPLAY** | Show the sentence as-is | Entailment prob ≥ 0.70 |
+|  **SUPPRESS** | Drop the sentence entirely | Contradiction prob ≥ 0.50 |
+|  **RE_RETRIEVE** | Widen search & retry (up to 2×) | Entailment prob < 0.30 |
+|  **FLAG** | Show with unverified warning | Borderline / inconclusive |
 
 ---
 
